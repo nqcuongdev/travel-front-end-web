@@ -1,0 +1,925 @@
+*{margin: 0; padding: 0;}
+@font-face{
+	font-family: FontBigNoodle;
+	src:url("fonts/FontBigNoodle.ttf");
+}
+h1{
+	font-family: "Poppins", sans-serif;
+	color: #222222;
+	line-height: 1.2em ! important;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: 600;
+}
+h2{
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	line-height: 1.2em ! important;
+	font-weight: 600;
+	color: #323232;
+}
+h4{
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2em !important;
+	position: relative;
+	color: #222222;
+}
+h5{
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #222222;
+	line-height: 1.2em !important;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: 0;
+}
+a:hover{
+	text-decoration: none;
+	outline:0;
+	color:#f8b600!important;
+}
+/*css cho toàn bộ body*/
+body{
+	color:#777777;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.625em;
+	position: relative;
+}
+
+/*=====================CSS Trang home==========================*/
+
+/* css cho phần menubar */
+.nav-link {
+	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff !important;
+	padding:25px 20px;
+	font-size: 12px;
+	margin-top: -10px;
+}
+.navbar{
+	transition: 0.5s;
+	background-color: transparent;
+	padding: 0.5rem 1.5rem ;
+}
+.navbar.blackbackground{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.menubar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menumobile{
+	flex-basis: 100%;
+	margin-top: -20px;
+}
+}
+.nav-item a:hover{
+	color:#f8b600!important;
+}
+.navbar-light .navbar-toggler{
+	background-image: none;
+}
+/*css cho logo*/
+.navbar-brand {
+	font-family:FontBigNoodle;	
+	font-size: 30px;
+	display: inline-block;
+	white-space: nowrap;
+}
+/* css cho phần slide */
+.carousel-inner{
+	background: rgba(0,0,0,.3);
+}
+.carousel-caption.d-none.d-md-block{
+	text-align: center!important;
+	top:34%;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 650px!important;
+}
+.tieudenho {
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.tieudelon{
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 72px;
+	font-weight: 700;
+
+}
+.chunho{
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+}
+.overlay{
+	position: absolute;
+	background: rgba(0,0,0,.3);
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
+
+
+.btn.btn-outline-info{
+	color: #fff;
+	border: 1px solid white;
+	background-color: transparent;
+	font-weight: 600;
+	display:  inline-block;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.btn.btn-outline-info:hover{
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: #222;
+}
+
+.navbar-toggler{
+	margin-right: 0;
+	border-color: #fff;
+	border-radius: 0;
+}
+/*Responsive cho màn hình di động*/
+/*Màn hình dọc*/
+@media(max-width: 576px){
+	.navbar{
+		background-color: black;
+	}
+	.navbar-toggleable-sm .navbar-nav{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.navbar-light .navbar-nav .nav-link{
+		padding: 8px 0px;
+		margin: 0;
+		display:  block;
+		font-size: 11px;
+	}
+	.navbar-brand{
+		font-size: 20px;
+	}
+	.menumobile{
+		margin-top: 0px;
+	}
+	.navbar-toggler.hidden-sm-up.float-sm-right{
+		border-radius: 0.25rem;
+		border-color: #fff;
+		padding: 10px 2px;
+		margin-right: 5px;
+		margin-top: -1px;
+		font-size: 20px;
+	}
+	.navbar-light .navbar-brand, .navbar-light .navbar-toggler{
+		padding: 0;
+	}
+
+	.navbar-light .navbar-brand, .navbar-light .navbar-toggler i{
+		color: #fff;
+		font-size: 20px;
+	}
+	.carousel-caption.d-none.d-md-block{
+		top: 20% !important;
+	}
+	.carousel-inner{
+		height: 300px;
+	}
+	.carousel-inner img{
+		height: 300px! important;
+	}
+	.tieudenho{
+		font-size: 10px;
+		text-align: center;
+	}
+	.tieudelon{
+		font-size: 30px;
+		text-align: center;
+		margin-top: -15px;
+	}
+	.chunho{
+		font-size: 12px;
+	}
+	.btn.btn-outline-info{
+		margin-top: 3px;
+		font-size: 15px;
+	}
+	.side-text{
+		padding: 0;
+		top:22px;
+	}
+	p{
+		margin:0;
+	}
+	.single-footer{
+		margin-bottom: 1rem;
+	}
+}
+/*Màn hình nằm ngang*/
+@media(max-width: 991px) {
+	.nav-link{
+		font-size: 12px;
+		padding: 5px 5px;
+	}
+	.carousel-caption.d-none.d-md-block{
+		top: 20% !important;
+	}
+	.carousel-inner{
+		height: 300px;
+	}
+	.carousel-inner img{
+		height: 300px! important;
+	}
+	.tieudenho{
+		font-size: 15px;
+		text-align: center;
+	}
+	.tieudelon{
+		font-size: 40px;
+		text-align: center;
+		margin-top: -15px;
+	}
+	.chunho{
+		font-size: 15px;
+	}
+	.btn.btn-outline-info{
+		margin-top: 5px;
+		font-size: 15px;
+	}
+}
+/*Css cho mục populatour*/
+.populartour{
+	padding: 120px 0px;
+}
+.col-lg-12.text-xs-center{
+	padding-bottom: 70px;
+}
+.single-populartour{
+	-webkit-transition: all 0.3s ease 0s;
+  	-moz-transition: all 0.3s ease 0s;
+  	-o-transition: all 0.3s ease 0s;
+  	transition: all 0.3s ease 0s;
+}
+.opacitybg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(4, 9, 30, 0.4);
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+  	-moz-transition: all 0.3s ease 0s;
+  	-o-transition: all 0.3s ease 0s;
+	opacity: 0;
+}
+.anh{
+	position: relative;	
+}
+.info{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+}
+.btn-price{
+	background: #f8b600;
+	text-align: center;
+	color: #222;
+	padding: 6px 30px;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	margin:10px;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.btn-price:hover{
+	color: #222!important;
+}
+.info h4{
+	color:#fff;
+}
+.info p{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+/*transison cho popular*/
+.single-populartour:hover .btn-price{
+	opacity: 1;
+}
+.single-populartour:hover .opacitybg{
+	opacity: 1;
+}
+/*css cho mục prices*/
+.chutren{
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: #222222;
+}
+.chunhoduoi{
+	font-family: "Poppins", sans-serif;
+}
+.prices .single-price .price-list{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.prices {
+	padding: 120px 0px;
+}
+.prices .single-price h4{
+	text-align: center;
+	border-bottom: 1px solid #f8b600;
+  	padding-bottom: 20px;
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+}
+.prices .single-price{
+	background: #fff;
+	padding: 30px;
+}
+.price-btn {
+	text-decoration: none;
+	background:#f9f9ff;
+	border: 1px solid #eee;
+	color: #222;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 5px 20px;
+}
+.price-btn:hover{
+	border-color: #f8b600;
+	background: #f8b600;
+	color: #fff!important;
+	text-decoration: none;
+}
+.prices .single-price .price-list li{
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.price-list{
+	margin-top: 30px !important;
+}
+/*css cho phần issues*/
+.issues{
+	padding: 120px 0px;
+}
+.issues .single-issues h4{
+	color: #222222;
+	font-size: 18px;
+	margin: 20px 0px;
+}
+.issues .single-issues h4:hover{
+	color:#f8b600;
+}
+.issues .single-issues a{
+	text-decoration: none;
+	outline: 0;
+}
+.img-fluid{
+	width: 100%;
+}
+/*transion issues*/
+.single-issues .thumb{
+	overflow: hidden;
+}
+.single-issues img{
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+  	-moz-transition: all 0.3s ease 0s;
+  	-o-transition: all 0.3s ease 0s;
+}
+.single-issues:hover .thumb img{
+	transform: scale(1.2);
+}
+/*css cho footer*/
+.footer {
+	background:#04091e;
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+.footer .single-footer h6{
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2em !important;
+}
+.footer .single-footer p{
+	color: #777777;
+	text-align: justify;
+}
+.footer .single-footer ul li a{
+	text-decoration: none;
+	color: #777777;
+}
+.footer .single-footer ul li a:hover{
+	color: #f8b600;
+}
+.footer-icon i:hover{
+	color: #f8b600;
+}
+p.col-lg-8.col-sm-12.footer-text.m-0:hover{
+	color: #ffc0cbd9;
+}
+.footer .single-footer .col{
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.footer-icon{
+	text-align: right;
+}
+.footer-icon a{
+	width: 40px;
+	display: inline-table;
+	height: 40px;
+	text-align: center;
+	padding-top: 10px;
+}
+.footer-icon i{
+	color: #cccccc;
+}
+.footer .footer-bottom .col{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.footer-bottom{
+	padding-top: 40px;
+	margin-top: 20px;
+	border-top: 1px solid #333;
+	align-items: center !important;
+	justify-content: space-between !important;
+	display: flex !important;
+}
+.khungemail .footer-gmail{
+	position: relative;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+}
+.khungemail .footer-gmail .form-control{
+	border: 1px solid #333;
+	width: 80%;
+	font-weight: 300;
+	background: transparent;
+	color:#777;
+	padding-left: 20px;
+	border-radius: 0;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+.footer-gmail .bb-btn{
+	color: #fff;
+	border-radius: 0;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+	padding: 8px 12px;
+	border: 0;
+	background-color: #f8b600 !important;
+}
+.bb-btn i{
+	font-size: 1em;
+	line-height: inherit;
+}
+/*======================Trang Hotels======================*/
+/*css phần banner*/
+.banner-hotels{
+	position: relative;
+	background: url(img/hotels/banner_top.jpg) center;
+	background-size: cover;
+	color: #fff;
+}
+.banner-hotels .overlay-bg{
+	background: rgba(4, 9, 30, 0.28);
+	margin: auto;
+	width: 100%;
+}
+.banner-hotels .row{
+	justify-content: center;
+	align-items: center;
+}
+.contents-banner{
+	padding: 90px 0px;
+	text-align: center;
+}
+.contents-banner h1 {
+  font-size: 48px!important;
+  font-weight: 600;
+  color: #fff;
+}
+/*css phần hotel*/
+.hotels{
+	padding: 120px 0px;
+	background: #f9f9ff;
+}
+.title-hotels{
+	padding-bottom: 40px;
+	justify-content: center;
+}
+.top-title{
+	text-align: center;
+}
+.top-title h1{
+	margin-bottom: 10px;
+}
+.single-hotels .pic-hotels{
+	overflow: hidden;
+}
+.single-hotels .pic-hotels img{
+	width: 100%;
+}
+.details{
+	padding: 20px;
+	background: #fff;
+}
+.tieude-star{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.tieude-star .star i{
+	color: orange;
+}
+.lists-hotels{
+	margin-top: 30px;
+}
+.lists-hotels li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.lists-hotels .btn-price-hotels{
+	background: #f8b600;
+	color: #222!important;
+	padding: 5px 20px;
+	font-weight: 600;
+}
+/*transatation*/
+.hotels .single-hotels{
+	margin-top: 30px;
+	transition: 0.5s;
+}
+.hotels .single-hotels:hover{
+	box-shadow: 0px 0px 10px #ffa500d4;
+}
+/*======================Trang Packages======================*/
+/*css phần packages*/
+.hot-package{
+	padding: 120px 0px;
+}
+.hot-package .row{
+	justify-content: center;
+}
+.hot-package .title-hotels{
+	padding-bottom: 70px;
+}
+.hot-package .overlay-bg{
+	position: relative;
+	z-index: 1;
+	background: rgba(4, 9, 30, 0.5);
+}
+@media(max-width: 991px){
+	.hot-package .carousel-inner{
+		height: auto;
+	}
+	.hot-package .carousel-inner .btn{
+		font-size: 12px;
+	}
+	.hot-package .carousel-indicators{
+		bottom: -10px !important;
+	}
+	.hot-package .carousel-caption.d-none.d-md-block{
+		top: 10%!important;
+	}
+}
+/*css phần carousel*/
+.hot-package .carousel-inner img{
+	height: auto !important;
+}
+.hot-package .carousel-inner .overlay{
+	background: rgba(4, 9, 30, 1);
+}
+.hot-package .carousel-inner h4{
+	color: #fff;
+}
+.hot-package .carousel-inner p{
+	color: #fff;
+}
+.hot-package .carousel-caption.d-none.d-md-block{
+	top: 55%;
+}
+.hot-package .carousel-indicators{
+	bottom: 0px;
+}
+.packages {
+	background: #f9f9ff;
+	padding: 120px 0px;
+}
+.packages .row{
+	justify-content: center;
+}
+.packages .single-hotels{
+	margin-top: 30px;
+	transition: 0.5s;
+}
+/*Transition*/
+.packages .single-hotels:hover{
+	box-shadow: 0px 0px 10px #ffa500d4;
+}
+/*======================Trang Contact======================*/
+/*css phần contact*/
+.contact{
+	padding: 120px 0px 60px 0px;
+}
+.contact .form-group input, .contact .form-group textarea{
+	border-radius: 0px;
+	font-size: 13px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.contact .form-group textarea{
+	height: 178px;
+	margin-top: 0;
+}
+.contact .btn.btn-primary{
+	color: #fff;
+	border:1px solid transparent;
+	border-radius: 6px;
+	background: #f8b600;
+}
+.contact .btn.btn-primary:hover{
+	border: 1px solid #f8b600;
+	color: #f8b600;
+	background: transparent;
+}
+/*css phần information*/
+.information{
+	padding: 0px 0px 60px 0px;
+}
+.information .single-info{
+	display: flex;
+	flex-direction: row;
+}
+.information .single-info i{
+	font-size: 45px;
+	color: #f8b600;
+	margin-right: 30px;
+}
+@media (max-width: 576px){
+	.information .col-lg-4{
+		margin-bottom: 10px;
+	}
+}
+/*transation*/
+.details-info :hover{
+	color: #f8b600;
+}
+/*======================Trang About======================*/
+/*css phần about*/
+.about{
+	padding: 120px 0px;
+}
+.about .row .col-lg-6 h1{
+	text-transform: uppercase;
+	margin:20px 0px;
+}
+.about .row .col-lg-6 p{
+	text-align: justify;
+}
+/* css phần đánh giá */
+.comments{
+	padding: 120px 0px;
+	background: #f9fcfff2;
+}
+.comments ._1 {
+	justify-content: center;
+}
+.comments .title-hotels{
+	padding-bottom: 70px;
+}
+.comments .single-comments{
+	width: 555px;
+	margin-right: 30px;
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	padding: 25px 30px 12px 30px;
+}
+.single-comments h4{
+	margin-bottom: 5px;
+}
+.star i{
+	color: orange;
+}
+.comments .thumb{
+	margin-right: 30px;
+}
+.comments .thumb img{
+	width: 100px;
+	height: 90px !important;
+}
+.comments .carousel-inner{
+	background: none!important;
+}
+.comments .carousel-indicators {
+	bottom: -16px;
+	margin-top: 70px;
+}
+.comments .carousel-indicators .active{
+	background-color: orange;
+}
+.comments .carousel-indicators li{
+	border: 1px solid orange;
+	margin-bottom: -24px;
+}
+@media (max-width: 720px){
+	.comments .row{
+		justify-content: center;
+	}
+	.single-comments h4{
+	font-size: 12px;
+}
+	.single-comments p{
+		font-size: 10px;
+	}
+	.comments .thumb img{
+	width: 80px;
+	height: 60px !important;
+}
+	.comments .single-comments{
+		width: 500px;
+	}
+}
+@media (max-width: 960px){
+	.comments .row{
+		justify-content: center;
+	}
+	.comments .carousel-item{
+		justify-content: center;
+	}
+	.comments .single-comments{
+		width: 500px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-top: 5px;
+	}
+	.single-comments h4{
+	font-size: 13px;
+	}
+	.single-comments p{
+		font-size: 12px;
+	}
+	.comments .carousel-indicators {
+	bottom: -16px;
+	margin-top: 70px;
+}
+
+}
+@media(max-width: 540px){
+	.comments .row{
+		justify-content: center;
+	}
+	.comments .single-comments{
+		width: 320px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-top: 5px;
+	}
+	.single-comments h4{
+	font-size: 12px;
+	}
+	.single-comments p{
+		font-size: 10px;
+	}
+}
+
+/*======================Trang Login======================*/
+.header-login .navbar{
+	background: #222;
+}
+.form-login{
+	background: #F7F7F7;
+	padding: 120px 0px;
+	position: relative;
+}
+.form-login .row{
+	justify-content: center;
+}
+#login-section{
+	background: #fff;
+	box-shadow: 0 8px 20px #e3e7ea;
+	border-radius: 6px;
+	text-align: center;
+	margin:60px 0px;
+	padding: 50px 110px;
+}
+.form-login .title-form h2{
+	text-transform: uppercase;
+}
+.form-login .form-group .input-lg{
+	height: 48px;
+	border-radius: 0px;
+	padding-left: 10px;
+	border:1px solid #ccc;
+	margin: 10px 0px;
+}
+.form-login .btn.btn-primary{
+	background: #f8b600;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	padding: 10px 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 100%;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.form-login .btn.btn-primary:hover{
+	color: #222;
+}
+@media (max-width: 576px){
+	.form-group{
+		width: 100%;
+	}
+}
+/*css form đăng ký*/
+.form-login .btnsingup{
+	text-align: center;
+}
+.form-login .btn-signup{
+	width: auto !important;
+}
+#signup-section{
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 8px 20px #e3e7ea;
+}
+.form-login .row h2{
+	text-align: center;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+
+/*=======================TEST AJAX==================*/
+.lm-js{
+	display: none;
+}
+button#loadmore{
+	background: #f8b600;
+	color: #222;
+	transition: 0.5s;
+	border: none;
+	border-radius: 0px;
+	padding: 5px 20px;
+	font-size: 14px;
+	font-weight: 600;
+}
+button#loadmore:hover{
+	background: transparent;
+	color: #222;
+	border:1px solid #f8b600;
+}
