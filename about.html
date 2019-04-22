@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title>About</title>
+	<title>About || T-Star</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
 	<link rel="stylesheet" href="vendor/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="vendor/animate.css">
  	<link rel="stylesheet" href="style.css">
 </head>
 <body >
@@ -59,17 +60,18 @@
 	<div class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow bounceInLeft">
 					<img src="img/about/info-img.jpg" alt="" class="img-fluid">
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow bounceInRight">
 					<h1>Who are we ?</h1>
 					<p>Our company was born to serve customers. Our criteria always put the comfort of customers on the top. Because of "There is only one boss-the customer. And he can fire everybody in the company from the chairman on down, simply by spending his money somewhere else." -  Sam Walton.If we are not perfect, please comment. Hope you will support us.</p>
 				</div>
 			</div>
 		</div>
 	</div><!-- hết phần about -->
-	<div class="comments">
+
+	<div class="comments wow fadeInUp">
 		<div class="container">
 			<div class="row _1">
 				<div class="title-hotels col-lg-8">
@@ -279,8 +281,11 @@
 </div><!-- hết footer -->
 <!-- link script -->
 <script type="text/javascript" src="vendor/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/wow.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="vendor/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="vendor/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
+<script>
+	new WOW().init();
+</script>
+<!-- hết link script -->
 </body>

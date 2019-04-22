@@ -7,4 +7,7 @@ $(function() {
     $('.navbar').removeClass('blackbackground');
   		}
 	});
+
 });
+
+
